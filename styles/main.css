@@ -1357,3 +1357,32 @@ section[id] {
 html {
     overflow-x: clip;
 }
+
+/* Tighter rhythm between sections */
+section > h2 {
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+}
+
+.closly-actions:not(:has(*)) {
+    display: none;
+}
+
+/* Projects: centered rows, so a lone last card sits in the middle instead of hanging left */
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projects-grid > .project-card {
+    flex: 0 1 calc(33.333% - 1.25em);
+    box-sizing: border-box;
+    min-width: 17.5em;
+}
+
+@media (max-width: 48em) {
+    .projects-grid > .project-card {
+        flex-basis: 100%;
+    }
+}
