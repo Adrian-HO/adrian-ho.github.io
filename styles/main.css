@@ -136,7 +136,7 @@ p {
 a {
     color: var(--accent-color);
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 a:hover {
@@ -183,7 +183,7 @@ nav {
 .social-icons a {
     font-size: 1.5em;
     color: var(--light-text);
-    margin-left: 1.3em;
+    margin-inline-start: 1.3em;
 }
 
 .social-icons a:hover {
@@ -286,7 +286,7 @@ nav {
 .icon {
     width: 2.5em;
     height: 2.5em;
-    margin-right: 0.9375em;
+    margin-inline-end: 0.9375em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -389,7 +389,7 @@ nav {
     color: var(--light-text);
     border-radius: 0.3125em;
     font-size: 0.9rem;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn:hover {
@@ -609,8 +609,8 @@ footer {
     text-align: center;
 }
 
-.closly-meta {
-    color: var(--accent-color) !important;
+.closly .closly-meta {
+    color: var(--accent-color);
     font-weight: 500;
 }
 
@@ -626,8 +626,8 @@ footer {
     margin: 0;
 }
 
-.video-feature {
-    margin: 0 auto 2.5em !important;
+.closly .video-feature {
+    margin: 0 auto 2.5em;
 }
 
 .video-feature figcaption,
@@ -717,7 +717,7 @@ footer {
 }
 
 .card-list {
-    padding-left: 1.25em;
+    padding-inline-start: 1.25em;
     font-size: 0.9rem;
     opacity: 0.9;
 }
@@ -799,7 +799,7 @@ footer {
 
 /* Lower half: spec-sheet skills, hex-island About, closing contact panel */
 .chips {
-    padding-left: 0;
+    padding-inline-start: 0;
     margin: 0;
 }
 
