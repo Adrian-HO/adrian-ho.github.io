@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adrian Ho | Full-Stack Developer</title>
+    <meta
+      name="description"
+      content="Adrian Ho, full-stack developer. Built and shipped Closly, a two-sided land marketplace with a 4-layer off-platform contact firewall."
+    />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://adrian-ho.github.io/" />
+    <meta property="og:title" content="Adrian Ho | Full-Stack Developer" />
+    <meta property="og:description" content="Built and deployed Closly solo: React, TypeScript, Node, MongoDB, and a 4-layer off-platform firewall." />
+    <meta property="og:image" content="https://adrian-ho.github.io/assets/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Adrian Ho | Full-Stack Developer" />
+    <meta name="twitter:description" content="Built and deployed Closly solo: React, TypeScript, Node, MongoDB, and a 4-layer off-platform firewall." />
+    <meta name="twitter:image" content="https://adrian-ho.github.io/assets/og.png" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script
+      src="https://kit.fontawesome.com/6b21368e63.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@google/model-viewer@4.1.0/dist/model-viewer.min.js"
+    ></script>
+  </head>
+  <body>
+    <div class="aurora" aria-hidden="true"><span class="a1"></span><span class="a2"></span><span class="a3"></span></div>
+    <canvas class="hexfield" aria-hidden="true"></canvas>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="img/MyLogoBlue.png" alt="Adrian Ho logo" />
+          <div class="blue-overlay"></div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#closly">Closly</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/adrian-ho1/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Adrian-HO" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Hello, I'm Adrian Ho</h2>
+        <p>
+          Full-stack developer. I built and shipped Closly, a two-sided land
+          marketplace, as the solo engineer: React and TypeScript on the front
+          end, Node, Express and MongoDB on the back end, real-time messaging,
+          Stripe billing, and a 4-layer system that stops users from taking
+          deals off the platform.
+        </p>
+        <p>
+          Computer Science graduate (Software Engineering Honours, Trent
+          University, 2025), with a game development background in Unreal
+          Engine and Unity.
+        </p>
+      </div>
+      <div class="hero-image">
+        <model-viewer
+          src="assets/hex-island.glb"
+          alt="Low-poly hex island with a blue map pin, built in Blender"
+          camera-controls
+          auto-rotate
+          auto-rotate-delay="0"
+          rotation-per-second="18deg"
+          camera-orbit="30deg 68deg 88%"
+          field-of-view="24deg"
+          environment-image="neutral"
+          interaction-prompt="none"
+          shadow-intensity="0.8"
+          exposure="1.1"
+          disable-zoom
+        ></model-viewer>
+      </div>
+    </section>
+
+    <section id="closly" class="closly">
+      <h2>Featured: Closly</h2>
+      <div class="closly-intro">
+        <p class="closly-meta">
+          Solo engineer · Dec 2025 to May 2026 · 1,346 commits · Shipped to
+          production at closly.io · Company wound down Aug 2026
+        </p>
+        <p>
+          Closly matched land buyers with acquisition specialists selling
+          off-market deals. The hard part was never the listings. Once two
+          parties meet, both are better off finishing the deal privately and
+          skipping the fee. Most of the engineering went into holding a
+          multi-week, multi-party transaction on the platform while both sides
+          had a reason to leave.
+        </p>
+      </div>
+
+      <figure class="video-feature">
+        <video
+          src="assets/closly/firewall.mp4"
+          poster="assets/closly/firewall.jpg"
+          controls
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+        ></video>
+        <figcaption>
+          <strong>The off-platform firewall.</strong> A buyer tries to move the
+          deal to WhatsApp. The message is blocked before it is ever
+          delivered, and the deal stays on the platform.
+        </figcaption>
+      </figure>
+
+      <div class="clip-grid">
+        <figure class="clip">
+          <video src="assets/closly/live-site.mp4" poster="assets/closly/live-site.jpg" controls muted playsinline preload="none"></video>
+          <figcaption>
+            <strong>Live at closly.io.</strong> The audience gate, then the
+            buyer and deal seller landing pages.
+          </figcaption>
+        </figure>
+        <figure class="clip">
+          <video src="assets/closly/marketplace.mp4" poster="assets/closly/marketplace.jpg" controls muted playsinline preload="none"></video>
+          <figcaption>
+            <strong>Buyer marketplace.</strong> Mapbox map with clustering,
+            satellite view, deal cards and list view.
+          </figcaption>
+        </figure>
+        <figure class="clip">
+          <video src="assets/closly/seller.mp4" poster="assets/closly/seller.jpg" controls muted playsinline preload="none"></video>
+          <figcaption>
+            <strong>Acquisition specialist side.</strong> Active buy boxes on
+            a map, and the add-deal flow with contract upload.
+          </figcaption>
+        </figure>
+      </div>
+
+      <p class="closly-note">
+        Logged-in footage runs the real application on a copy of the production
+        data with every name, email and phone number replaced by synthetic
+        values.
+      </p>
+
+      <div class="stat-grid">
+        <div class="stat"><span class="stat-value">1,346</span><span class="stat-label">commits</span></div>
+        <div class="stat"><span class="stat-value">4</span><span class="stat-label">detection layers</span></div>
+        <div class="stat"><span class="stat-value">6</span><span class="stat-label">deal pipeline stages</span></div>
+        <div class="stat"><span class="stat-value">731</span><span class="stat-label">aria attributes across 265 files</span></div>
+      </div>
+
+      <ul class="chips">
+        <li>React 19</li><li>TypeScript</li><li>Vite</li><li>TanStack Query</li>
+        <li>Zustand</li><li>Node / Express</li><li>MongoDB</li><li>Socket.io</li>
+        <li>ONNX / MobileBERT</li><li>Stripe</li><li>DocuSeal</li><li>Mapbox</li>
+        <li>Hetzner + Coolify</li><li>Cloudflare</li>
+      </ul>
+
+      <div class="closly-actions">
+        <!-- Full 7-minute tour: add the unlisted YouTube link here once uploaded.
+        <a href="YOUTUBE_LINK" class="btn btn-primary">Watch the full tour</a> -->
+      </div>
+    </section>
+
+    <section id="experience" class="experience">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <article class="exp-entry">
+          <div class="exp-logo"><img src="assets/logos/closly.png" alt="Closly logo" /></div>
+          <div class="exp-body">
+            <h3>Co-Founder &amp; Lead Developer</h3>
+            <p class="exp-meta">Closly · Oct 2025 to Aug 2026</p>
+            <ul class="card-list">
+              <li>Architected and shipped a full-stack marketplace to production at closly.io as the sole developer: React 19 + TypeScript front end, Node/Express + MongoDB back end, Socket.io messaging and a 6-stage deal tracking pipeline.</li>
+              <li>Built a 4-layer moderation pipeline that screens buyer-seller messages for off-platform contact attempts, from regex matching up to an ONNX/MobileBERT intent model and multi-turn conversation tracking.</li>
+              <li>Integrated Stripe checkout, Google OAuth and DocuSeal e-signature contracts.</li>
+              <li>Ran production solo: Docker, Coolify on a Hetzner VPS, Cloudflare, CSP and rate limiting, Gitleaks in CI.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="exp-entry">
+          <div class="exp-logo"><img src="assets/logos/summit.png" alt="Summit Land Partners logo" /></div>
+          <div class="exp-body">
+            <h3>Website Developer</h3>
+            <p class="exp-meta">Summit Land Partners · Jul 2026 to Aug 2026</p>
+            <ul class="card-list">
+              <li>Redesigned and updated the company's live marketing site (React 19 + Vite), adding SMS consent opt-in and Terms and Privacy pages for carrier A2P 10DLC compliance, with opt-out language aligned to the FCC rule.</li>
+              <li>Fixed the contact form and migrated its email delivery to a company-controlled account.</li>
+            </ul>
+            <a class="exp-link" href="https://thesummitlandpartners.com/">Visit thesummitlandpartners.com</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-content">
+            <h3>Claude Code Harness</h3>
+            <p>
+              Personal AI-tooling infrastructure I use every day: a plugin of
+              skills, subagents and lifecycle hooks shared across all my
+              projects.
+            </p>
+            <p>
+              Hooks log every edit, an analyzer turns repeated patterns into
+              "instincts", and an injector feeds them back at the start of the
+              next session. Also includes hook execution profiles, a config
+              validator and cross-project audits.
+            </p>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/summit-site.jpg" alt="Summit Land Partners website home page" loading="lazy" />
+          </div>
+          <div class="project-content">
+            <h3>Summit Land Partners Website</h3>
+            <p>
+              A live marketing site I redesigned and updated in React 19 + Vite, including SMS
+              consent compliance pages and a working contact form.
+            </p>
+            <div class="project-links">
+              <a href="https://thesummitlandpartners.com/" class="btn">Visit site</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="img/blaster.png" alt="Blaster third person shooter gameplay" loading="lazy" />
+          </div>
+          <div class="project-content">
+            <h3>Blaster Shooter Game</h3>
+            <p>
+              A third person multiplayer shooter with networked gameplay, built
+              in Unreal Engine 5.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Adrian-HO/Blaster" class="btn">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="img/hexgrid.png" alt="HexGridMap editor in Unity" loading="lazy" />
+          </div>
+          <div class="project-content">
+            <h3>HexGridMap Capstone</h3>
+            <p>
+              A hex grid map editor that lets users create and edit maps.
+              Built in Unity as a capstone project.
+            </p>
+            <p>
+              Led the group project through to a successful demo at the end of
+              the semester.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Adrian-HO/HexgridProject" class="btn">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <button type="button" class="project-image video-thumb" data-video="p_9ERbuZCh0" aria-label="Play the Stellar Fever gameplay demo">
+            <img src="img/StellarFever.png" alt="Stellar Fever gameplay video" loading="lazy" />
+            <span class="play-badge" aria-hidden="true"></span>
+          </button>
+          <div class="project-content">
+            <h3>Stellar Fever</h3>
+            <p>
+              A multiplayer co-op survival game made in Unreal Engine 4 with a
+              team of 10. I was a programmer on the team.
+            </p>
+            <p>
+              A first person shooter where you protect your ship from boarding
+              invaders.
+            </p>
+            <div class="project-links">
+              <a href="https://www.youtube.com/watch?v=p_9ERbuZCh0" class="btn">Live Demo</a>
+              <a href="https://p0rtal.itch.io/stellar-fever" class="btn">itch.io</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <button type="button" class="project-image video-thumb" data-video="em7YKKXWvEE" aria-label="Play the neural network text generator demo">
+            <img src="assets/nn-textgen.jpg" alt="Neural network text generator demo video" loading="lazy" />
+            <span class="play-badge" aria-hidden="true"></span>
+          </button>
+          <div class="project-content">
+            <h3>Neural Network Text Generator</h3>
+            <p>
+              A transformer-based neural language model that predicts text
+              sequences using multi-head attention.
+            </p>
+            <div class="project-links">
+              <a href="https://youtu.be/em7YKKXWvEE" class="btn">Live Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <button type="button" class="project-image video-thumb" data-video="_n_0GEjlFZg" aria-label="Play the OpenMP neural network demo">
+            <img src="assets/nn-openmp.jpg" alt="Neural network with OpenMP demo video" loading="lazy" />
+            <span class="play-badge" aria-hidden="true"></span>
+          </button>
+          <div class="project-content">
+            <h3>Neural Network with OpenMP Parallelization</h3>
+            <p>
+              A multi-layer feed-forward neural network with backpropagation,
+              written from scratch.
+            </p>
+            <div class="project-links">
+              <a href="https://youtu.be/_n_0GEjlFZg" class="btn">Live Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <button type="button" class="project-image video-thumb" data-video="ZjnMTons6yI" aria-label="Play the single-threaded edge detection demo">
+            <img src="img/SingleThreadedImage.png" alt="Single-threaded edge detection demo video" loading="lazy" />
+            <span class="play-badge" aria-hidden="true"></span>
+          </button>
+          <div class="project-content">
+            <h3>Single-Threaded Edge Detector</h3>
+            <p>
+              Edge detection in Python that generates a black and white version
+              of the original image.
+            </p>
+            <div class="project-links">
+              <a href="https://youtu.be/ZjnMTons6yI" class="btn">Live Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <button type="button" class="project-image video-thumb" data-video="iS2-NWpR-D4" aria-label="Play the parallelized edge detection demo">
+            <img src="img/ParralizedImage.png" alt="Parallelized MPI edge detection demo video" loading="lazy" />
+            <span class="play-badge" aria-hidden="true"></span>
+          </button>
+          <div class="project-content">
+            <h3>Parallelized MPI Edge Detector</h3>
+            <p>
+              The same edge detection, parallelized with MPI, generating a
+              black and white version of the original image.
+            </p>
+            <div class="project-links">
+              <a href="https://youtu.be/iS2-NWpR-D4" class="btn">Live Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-imageCalculator">
+            <img src="img/Calculator_resized.png" alt="Java calculator interface" loading="lazy" />
+          </div>
+          <div class="project-content">
+            <h3>Java Calculator</h3>
+            <p>A simple calculator with a Java GUI.</p>
+            <div class="project-links">
+              <a href="https://github.com/Adrian-HO/Calculator" class="btn">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="education" class="experience">
+      <h2>Education</h2>
+      <div class="timeline">
+        <div class="experience-card">
+          <div class="card-date">2021 to 2025</div>
+          <h3>B.Sc. Computer Science, Software Engineering (Honours)</h3>
+          <p>Trent University, Peterborough, Ontario</p>
+        </div>
+        <div class="experience-card">
+          <div class="card-date">2018 to 2021</div>
+          <h3>Game Development Program (3 years)</h3>
+          <p>Algonquin College, Ottawa, Ontario</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="awards" class="experience">
+      <h2>Awards</h2>
+      <div class="timeline">
+        <div class="experience-card">
+          <div class="card-date">2021 to 2022</div>
+          <h3>Otonabee College Certificate of Achievement</h3>
+          <p>Trent University</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
+      <div class="skill-groups">
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <ul class="chips">
+            <li>TypeScript</li><li>JavaScript</li><li>Python</li><li>C#</li><li>C++</li>
+            <li>C</li><li>Java</li><li>SQL</li><li>PHP</li><li>Bash</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Front end</h3>
+          <ul class="chips">
+            <li>React 19</li><li>Vite</li><li>React Router</li><li>TanStack Query</li>
+            <li>Zustand</li><li>HTML</li><li>CSS</li><li>React Native</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Back end</h3>
+          <ul class="chips">
+            <li>Node.js</li><li>Express</li><li>REST APIs</li><li>Socket.io</li>
+            <li>MongoDB (Mongoose)</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Infrastructure</h3>
+          <ul class="chips">
+            <li>Hetzner VPS</li><li>Coolify</li><li>Cloudflare</li><li>JWT + bcrypt auth</li>
+            <li>Google OAuth</li><li>CI secret scanning</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Integrations</h3>
+          <ul class="chips">
+            <li>Stripe</li><li>DocuSeal</li><li>Mapbox</li><li>Cloudinary</li><li>Resend</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>AI and tooling</h3>
+          <ul class="chips">
+            <li>Claude API</li><li>Multi-agent orchestration</li><li>ONNX / MobileBERT</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Game development</h3>
+          <ul class="chips">
+            <li>Unreal Engine</li><li>Unity</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Spoken</h3>
+          <ul class="chips">
+            <li>English (professional)</li><li>French (beginner)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <div class="about-content" data-reveal>
+        <div class="isle-wrap">
+          <div class="hex-isle" aria-hidden="true">
+          <span class="hx water" style="--q:-1;--r:0;--d:0"></span>
+          <span class="hx sand" style="--q:-1;--r:1;--d:1"></span>
+          <span class="hx grass" style="--q:0;--r:1;--d:2"></span>
+          <span class="hx grass" style="--q:0;--r:0;--d:3"></span>
+          <span class="hx hill" style="--q:0;--r:-1;--d:4"></span>
+          <span class="hx rock" style="--q:1;--r:-1;--d:5"></span>
+          <span class="hx water" style="--q:1;--r:0;--d:6"></span>
+          <span class="pin"></span>
+        </div>
+          <p class="isle-caption">The hex island at the top of this page is a Blender model I scripted in Python.</p>
+        </div>
+        <div class="about-text">
+          <p>
+            I'm a curious developer who enjoys building clean, interactive
+            software. I'm always learning and pushing myself creatively and
+            technically.
+          </p>
+          <p>
+            Outside of work, I explore 3D art, languages, and enjoy time in
+            nature. I value growth and strive to level up one project at a time.
+          </p>
+          <ul class="glance">
+            <li><i class="fas fa-location-dot" aria-hidden="true"></i><span>Based in Ottawa, Ontario</span></li>
+            <li><i class="fas fa-graduation-cap" aria-hidden="true"></i><span>B.Sc. Computer Science, Software Engineering (Honours), Trent University, 2025</span></li>
+            <li><i class="fas fa-code" aria-hidden="true"></i><span>Builds with React, TypeScript, Node.js and MongoDB</span></li>
+            <li><i class="fas fa-cube" aria-hidden="true"></i><span>Off the clock: 3D art in Blender and game development</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="contact-panel">
+        <h2>Get in touch</h2>
+        <p>
+          Open to full-stack and AI engineering roles in Ottawa or remote across
+          Canada, and to small web and automation projects.
+        </p>
+        <div class="contact-actions">
+          <a href="mailto:akfh9577@gmail.com" class="btn btn-solid">Email me</a>
+          <a href="assets/Adrian-Ho-Resume.pdf" class="btn btn-line" download>Download resume (PDF)</a>
+          <a href="https://www.linkedin.com/in/adrian-ho1/" class="btn btn-line">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <dialog class="video-modal" aria-label="Demo video">
+      <button type="button" class="video-close" aria-label="Close video">×</button>
+      <div class="video-frame"></div>
+    </dialog>
+
+    <footer class="site-footer">
+      <p>© 2026 Adrian Ho</p>
+    </footer>
+    <script>
+      document.documentElement.classList.add('js');
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      // Respect reduced-motion: keep the 3D island still (it can still be dragged).
+      if (reduceMotion) {
+        document.querySelector('model-viewer')?.removeAttribute('auto-rotate');
+      }
+      // The About hex island assembles once when it scrolls into view.
+      const reveal = document.querySelectorAll('[data-reveal]');
+      if (reduceMotion || !('IntersectionObserver' in window)) {
+        reveal.forEach((el) => el.classList.add('is-visible'));
+      } else {
+        // Replays like Emma's: assembles when a third of it is on screen,
+        // resets only once it has fully left the screen (so the reset is never seen).
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach((e) => {
+            if (e.intersectionRatio >= 0.35) e.target.classList.add('is-visible');
+            else if (!e.isIntersecting) e.target.classList.remove('is-visible');
+          });
+        }, { threshold: [0, 0.35] });
+        reveal.forEach((el) => io.observe(el));
+      }
+      // Any element with data-video opens that YouTube demo in a large player.
+      // The iframe is only created on click, and removed on close so the audio stops.
+      const modal = document.querySelector('.video-modal');
+      const frame = modal.querySelector('.video-frame');
+      document.querySelectorAll('[data-video]').forEach((el) => {
+        el.addEventListener('click', () => {
+          frame.innerHTML = '';
+          const f = document.createElement('iframe');
+          f.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(el.dataset.video) + '?autoplay=1&rel=0';
+          f.title = 'Demo video';
+          f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+          f.allowFullscreen = true;
+          frame.appendChild(f);
+          modal.showModal();
+        });
+      });
+      modal.addEventListener('close', () => { frame.innerHTML = ''; });
+      modal.querySelector('.video-close').addEventListener('click', () => modal.close());
+      modal.addEventListener('click', (e) => { if (e.target === modal) modal.close(); });
+      // Reactive hex grid: a faint lattice; hexes near the cursor light up and fade.
+      (() => {
+        const cv = document.querySelector('.hexfield');
+        const ctx = cv.getContext('2d');
+        const R = 34, W = R * 1.5, H = Math.sqrt(3) * R;   // flat-top hex spacing
+        const calm = reduceMotion || matchMedia('(hover: none)').matches;
+        const energy = new Map();                         // "col,row" -> 0..1
+        let base, dpr, running = false;
+
+        const center = (c, r) => [c * W, r * H + (c & 1 ? H / 2 : 0)];
+        const hexPath = (g, x, y, k) => {
+          g.beginPath();
+          for (let i = 0; i < 6; i++) {
+            const a = Math.PI / 3 * i;
+            g.lineTo(x + R * k * Math.cos(a), y + R * k * Math.sin(a));
+          }
+          g.closePath();
+        };
+
+        function resize() {
+          dpr = Math.min(devicePixelRatio || 1, 2);
+          cv.width = innerWidth * dpr; cv.height = innerHeight * dpr;
+          base = document.createElement('canvas');
+          base.width = cv.width; base.height = cv.height;
+          const g = base.getContext('2d');
+          g.scale(dpr, dpr);
+          g.strokeStyle = 'rgba(103, 232, 249, 0.06)';
+          g.lineWidth = 1;
+          for (let c = -1; c * W < innerWidth + W; c++)
+            for (let r = -1; r * H < innerHeight + H; r++) {
+              const [x, y] = center(c, r); hexPath(g, x, y, 0.94); g.stroke();
+            }
+          draw();
+        }
+
+        function draw() {
+          ctx.setTransform(1, 0, 0, 1, 0, 0);
+          ctx.clearRect(0, 0, cv.width, cv.height);
+          ctx.drawImage(base, 0, 0);
+          ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+          for (const [key, e] of energy) {
+            const [c, r] = key.split(',').map(Number);
+            const [x, y] = center(c, r);
+            hexPath(ctx, x, y, 0.94);
+            ctx.fillStyle = `rgba(0, 212, 255, ${0.13 * e})`;
+            ctx.fill();
+            ctx.strokeStyle = `rgba(103, 232, 249, ${0.55 * e})`;
+            ctx.stroke();
+          }
+        }
+
+        function tick() {
+          for (const [key, e] of energy) {
+            const n = e * 0.95;
+            if (n < 0.02) energy.delete(key); else energy.set(key, n);
+          }
+          draw();
+          if (energy.size && !document.hidden) requestAnimationFrame(tick);
+          else running = false;
+        }
+
+        addEventListener('resize', resize);
+        resize();
+        if (calm) return;
+
+        addEventListener('pointermove', (ev) => {
+          const c0 = Math.round(ev.clientX / W), r0 = Math.round(ev.clientY / H);
+          for (let c = c0 - 3; c <= c0 + 3; c++)
+            for (let r = r0 - 3; r <= r0 + 3; r++) {
+              const [x, y] = center(c, r);
+              const d = Math.hypot(x - ev.clientX, y - ev.clientY);
+              if (d > R * 3.2) continue;
+              const e = 1 - d / (R * 3.2);
+              const key = c + ',' + r;
+              if ((energy.get(key) || 0) < e) energy.set(key, e);
+            }
+          if (!running) { running = true; requestAnimationFrame(tick); }
+        }, { passive: true });
+      })();
+      // Header turns frosted once the page scrolls.
+      const hdr = document.querySelector('header');
+      const onScroll = () => hdr.classList.toggle('scrolled', scrollY > 10);
+      addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    </script>
+  </body>
+</html>
